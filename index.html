@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa Towing | 24/7 Towing & Cash for Junk Cars in Harvey, IL</title>
+<meta name="description" content="Villa Towing provides 24-hour towing and roadside assistance, and pays cash for junk cars in Harvey, IL and the South Suburbs. Free pickup, same-day cash. Call (708) 243-3592.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>16510 Union Avenue, Harvey, IL</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Open 24 Hours, 7 Days</span>
+    </div>
+    <div class="tb-right">
+      <a href="tel:+17082433592"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>Emergency Dispatch: (708) 243-3592</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></span>
+      <span><span class="name">Villa Towing</span><br><span class="tag">Harvey, IL · Since 2003</span></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="junk-cars.html">Cash for Junk Cars</a>
+      <a href="about.html">About</a>
+      <a href="service-area.html">Service Area</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+17082433592" class="btn btn-primary nav-cta">Call Now</a>
+    </nav>
+    <button class="menu-btn" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero has-photo" style="background-image:linear-gradient(rgba(15,27,45,.90),rgba(15,27,45,.80)),url('images/yelp-7.jpg')">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">24-Hour Towing · We Buy Junk Cars for Cash</p>
+        <h1>Fast, Reliable Towing — Plus Top Cash for Your Junk Car</h1>
+        <p>When you're stuck on the road, we answer the phone and show up. And when you're ready to get rid of that junk, wrecked, or non-running vehicle, we'll buy it for cash and haul it away free. Serving Harvey and the South Suburbs for over 20 years.</p>
+        <div class="hero-cta">
+          <a href="tel:+17082433592" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+            (708) 243-3592
+          </a>
+          <a href="junk-cars.html" class="btn btn-light btn-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            Sell a Junk Car
+          </a>
+        </div>
+        <div class="trust-row">
+          <div class="t"><span class="n">Cash</span><span class="l">For Junk Cars</span></div>
+          <div class="t"><span class="n">Free</span><span class="l">Car Pickup</span></div>
+          <div class="t"><span class="n">20+</span><span class="l">Years in Business</span></div>
+          <div class="t"><span class="n">24/7</span><span class="l">Live Dispatch</span></div>
+        </div>
+      </div>
+
+      <div class="quote-card" id="quote">
+        <h3>Request Service</h3>
+        <p class="qс-sub">Send a request and we'll call you right back. For emergencies, please call.</p>
+        <form onsubmit="return villaSubmit(event)">
+          <div class="field"><label>Full Name</label><input required placeholder="Your name"></div>
+          <div class="field"><label>Phone Number</label><input required type="tel" placeholder="(708) 000-0000"></div>
+          <div class="field">
+            <label>How Can We Help?</label>
+            <select>
+              <option>Towing / Vehicle Recovery</option>
+              <option>Sell a Junk Car (Cash Offer)</option>
+              <option>Jump Start</option>
+              <option>Flat Tire Change</option>
+              <option>Lockout / Fuel Delivery</option>
+              <option>Motorcycle or RV Towing</option>
+            </select>
+          </div>
+          <div class="field"><label>Your Location</label><input placeholder="Street, city, or landmark"></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request Callback</button>
+          <p class="form-note">No obligation · Free estimate</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASH FOR JUNK CARS HIGHLIGHT -->
+<section class="junk-band">
+  <div class="wrap">
+    <div class="junk-inner">
+      <div class="junk-photo">
+        <img src="images/yelp-1.jpg" alt="Villa Towing — Cash for Junk Cars, free pickup, offers $300–$3,000">
+      </div>
+      <div class="junk-copy">
+        <p class="eyebrow" style="color:#fff;opacity:.85">Cash for Junk Cars</p>
+        <h2>Got a Junk Car? We Pay Cash On the Spot.</h2>
+        <p>Junk, wrecked, or won't start — any make, any condition. Free same-day pickup, honest offers, and we handle the paperwork. You get paid, we do the heavy lifting.</p>
+        <div class="junk-tags">
+          <span>✓ Free Towing &amp; Pickup</span>
+          <span>✓ Same-Day Cash</span>
+          <span>✓ Any Make or Condition</span>
+          <span>✓ We Handle the Title Paperwork</span>
+        </div>
+      </div>
+      <div class="junk-cta">
+        <a href="tel:+17082433592" class="btn btn-light btn-lg">Get Your Cash Offer</a>
+        <a href="junk-cars.html" class="junk-link">See how it works →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:44px">
+      <p class="eyebrow">Our Services</p>
+      <h2 class="h-lead">Full-Service Towing &amp; Recovery</h2>
+      <p class="sub">From a quick jump start to a long-distance haul, our licensed operators handle it with the right equipment and care for your vehicle.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></div>
+        <h3>Towing &amp; Recovery</h3>
+        <p>Local and long-distance towing for cars, trucks, and SUVs, plus accident recovery and winch-outs.</p>
+        <a href="services.html" class="more">Learn more →</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Roadside Assistance</h3>
+        <p>Jump starts, flat tire changes, lockout service, and emergency fuel delivery — around the clock.</p>
+        <a href="services.html" class="more">Learn more →</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Cash for Junk Cars</h3>
+        <p>We buy junk, wrecked, and non-running vehicles — free pickup and payment on the spot.</p>
+        <a href="junk-cars.html" class="more">Get an offer →</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M9 17h6M6 17l4-7h5l3 4"/></svg></div>
+        <h3>Motorcycle &amp; RV Towing</h3>
+        <p>Specialized flatbed equipment to move motorcycles, RVs, and oversized vehicles safely.</p>
+        <a href="services.html" class="more">Learn more →</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12h18M12 3v18" opacity=".0"/><path d="M4 17V9a2 2 0 012-2h9l4 4v6"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></div>
+        <h3>Long-Distance Hauling</h3>
+        <p>Relocating or bought a vehicle out of state? We provide safe long-distance transport.</p>
+        <a href="services.html" class="more">Learn more →</a>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Insurance &amp; Fleet</h3>
+        <p>Approved for insurance-related tows and dependable service for local business fleets.</p>
+        <a href="services.html" class="more">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / SPLIT -->
+<section class="section bg-mist">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Why Villa Towing</p>
+      <h2 class="h-lead">Two Decades of Service Our Neighbors Rely On</h2>
+      <p class="sub" style="margin-bottom:24px">We're a family-owned company, not a national call center. When you call, you reach people who know these roads and take pride in doing the job right.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Licensed &amp; insured</strong> operators you can trust with your vehicle.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Upfront, honest pricing</strong> — no surprise fees when the truck arrives.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Fast local response</strong>, typically within 30 minutes across our service area.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Modern flatbeds</strong> that protect your vehicle from additional damage.</span></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 style="font-size:1.3rem;margin-bottom:6px">Serving the South Suburbs</h3>
+      <p style="color:var(--muted);margin-bottom:18px">Based in Harvey and covering the surrounding communities day and night.</p>
+      <div class="area-grid">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Harvey</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Markham</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Dixmoor</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Riverdale</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Phoenix</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/></svg>Posen</span>
+      </div>
+      <a href="service-area.html" class="btn btn-outline" style="margin-top:20px">See Full Coverage Area</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:44px">
+      <p class="eyebrow">Simple Process</p>
+      <h2 class="h-lead">Help in Four Easy Steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4>Call Our Dispatch</h4><p>Reach a live person 24/7 at (708) 243-3592, or request a callback online.</p></div>
+      <div class="step"><div class="num">2</div><h4>Share the Details</h4><p>Tell us your location and vehicle. We'll confirm the service and a fair price.</p></div>
+      <div class="step"><div class="num">3</div><h4>We Dispatch a Truck</h4><p>A licensed operator heads your way — usually arriving within 30 minutes.</p></div>
+      <div class="step"><div class="num">4</div><h4>Back on Your Way</h4><p>We tow, assist, or pay cash for your vehicle and get you moving again.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section bg-mist">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:40px">
+      <p class="eyebrow">Our Work</p>
+      <h2 class="h-lead">Villa Towing on the Job</h2>
+      <p class="sub">Real photos of our trucks in action across the South Suburbs.</p>
+    </div>
+    <div class="gallery">
+      <a href="images/yelp-7.jpg" target="_blank"><img src="images/yelp-7.jpg" alt="Villa Towing flatbed hauling a classic car"></a>
+      <a href="images/yelp-5.jpg" target="_blank"><img src="images/yelp-5.jpg" alt="Villa Towing loading a pickup truck at a dealership"></a>
+      <a href="images/yelp-8.jpg" target="_blank"><img src="images/yelp-8.jpg" alt="Villa Towing flatbed hauling an SUV"></a>
+      <a href="images/yelp-9.jpg" target="_blank"><img src="images/yelp-9.jpg" alt="Villa Towing flatbed with a sedan"></a>
+      <a href="images/yelp-12.jpg" target="_blank"><img src="images/yelp-12.jpg" alt="Villa Towing loading a vehicle — we buy junk cars"></a>
+      <a href="images/yelp-10.jpg" target="_blank"><img src="images/yelp-10.jpg" alt="Villa Towing tow truck ready for a call"></a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:40px">
+      <p class="eyebrow">Customer Reviews</p>
+      <h2 class="h-lead">What Our Customers Say</h2>
+      <p class="sub">Rated 4.8 out of 5 across verified reviews.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="review"><div class="stars">★★★★★</div><q>Broke down late at night and they had a truck to me in under 30 minutes. Professional driver and a fair price. Highly recommend.</q><span class="who">— Marcus T., Harvey</span></div>
+      <div class="review"><div class="stars">★★★★★</div><q>Sold them my old car that wouldn't start. Simple process, they handled the paperwork and paid me the same day.</q><span class="who">— Denise R., Markham</span></div>
+      <div class="review"><div class="stars">★★★★★</div><q>Flat tire in bad weather and they were quick, courteous, and reasonable. We've used Villa for years and they never let us down.</q><span class="who">— Anthony G., Riverdale</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Need a Tow — or Cash for a Junk Car?</h2>
+    <p>Our dispatch line is open 24 hours a day, every day of the year.</p>
+    <a href="tel:+17082433592" class="btn btn-light btn-lg">Call (708) 243-3592</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></span>
+          <span class="name" style="color:#fff;font-weight:800;font-size:1.2rem">Villa Towing</span>
+        </div>
+        <p>Family-owned 24-hour towing, roadside assistance, and junk car removal serving Harvey, IL and the South Suburbs since 2003.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="foot-links">
+          <li><a href="services.html">Towing &amp; Recovery</a></li>
+          <li><a href="services.html">Roadside Assistance</a></li>
+          <li><a href="junk-cars.html">Cash for Junk Cars</a></li>
+          <li><a href="services.html">Motorcycle &amp; RV Towing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="foot-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service-area.html">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#quote">Request Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="foot-links">
+          <li>16510 Union Avenue<br>Harvey, IL 60426</li>
+          <li><a href="tel:+17082433592" style="color:#fff;font-weight:700">(708) 243-3592</a></li>
+          <li>Open 24 Hours · 7 Days</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Villa Towing. All rights reserved.</span>
+      <span>Licensed &amp; Insured · Harvey, Illinois</span>
+    </div>
+    <p class="disclaimer">This is a demonstration website created for design and preview purposes only. Business details are drawn from public listings and this is not an official Villa Towing web property.</p>
+  </div>
+</footer>
+
+<a href="tel:+17082433592" class="callbar">📞 Tap to Call — (708) 243-3592</a>
+
+<script>
+function villaSubmit(e){
+  e.preventDefault();
+  var b=e.target.querySelector('button[type=submit]');
+  b.textContent="✓ Request received — we'll call you shortly";
+  b.style.background="#1f7a3d";b.style.borderColor="#1f7a3d";
+  return false;
+}
+</script>
+</body>
+</html>
