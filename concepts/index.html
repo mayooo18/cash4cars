@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapid Rescue — 4 Design Concepts</title>
+<style>
+  :root{--bg:#101217;--card:#191c23;--line:#2a2e37;--text:#eef1f5;--muted:#9aa2af;--accent:#5b8cff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{text-align:center;padding:60px 24px 20px}
+  header .ey{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  header h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:900;letter-spacing:-.02em;margin:12px 0 10px}
+  header p{color:var(--muted);max-width:560px;margin:0 auto;font-size:1.05rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:30px 0 70px}
+  .concept{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .18s,border-color .18s}
+  .concept:hover{transform:translateY(-5px);border-color:var(--accent)}
+  .swatch-link{display:block}
+  .swatch{height:150px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .swatch .big{font-weight:900;font-size:1.9rem;letter-spacing:-.02em;z-index:2}
+  /* swatch themes */
+  .s1{background:repeating-linear-gradient(-45deg,#ffd200 0 20px,#111 20px 40px)}
+  .s1 .big{background:#0c0d0f;color:#ffd200;padding:10px 20px;text-transform:uppercase;font-family:"Arial Narrow",sans-serif}
+  .s3{background:#172a45}
+  .s3 .big{color:#e0a52e;font-family:"Rockwell","Roboto Slab",Georgia,serif}
+  .s3 .big::before{content:"★ ";color:#c0362c}
+  .smap{background:#e8eef2;background-image:repeating-linear-gradient(#dde6ee 0 1px,transparent 1px 30px),repeating-linear-gradient(90deg,#dde6ee 0 1px,transparent 1px 30px)}
+  .smap .big{color:#0c8a5a;display:inline-flex;align-items:center;gap:7px}
+  .smap .big::before{content:"";width:14px;height:14px;border-radius:50% 50% 50% 0;background:#e3861b;transform:rotate(45deg);display:inline-block}
+  .sbru{background:#fafaf7}
+  .sbru .big{color:#0a0a0a;border:3px solid #0a0a0a;padding:8px 18px;text-transform:uppercase}
+  .sbru .big b{color:#ff3b1f}
+  .meta{padding:22px 24px 26px}
+  .meta .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .meta h2{font-size:1.4rem;font-weight:800;margin:6px 0 8px;letter-spacing:-.01em}
+  .meta p{color:var(--muted);font-size:.94rem}
+  .meta .view{display:inline-block;margin-top:14px;color:var(--accent);font-weight:700;font-size:.9rem}
+  .langs{margin-top:14px;font-size:.82rem;color:var(--muted)}
+  .langs a{color:var(--text);font-weight:700;border:1px solid var(--line);border-radius:6px;padding:4px 10px;margin-right:6px}
+  .langs a:hover{border-color:var(--accent);color:var(--accent)}
+  footer{text-align:center;color:#616a78;font-size:.8rem;padding:0 24px 50px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <header>
+    <p class="ey">Rapid Rescue Towing &amp; Roadside</p>
+    <h1>Four Design Concepts</h1>
+    <p>Same business — <strong>Towing · Roadside Assistance · Cash for Junk Cars</strong> — four completely different looks. Click any one to open the full homepage. Each is bilingual: use the <strong>EN · ES</strong> toggle in the header, or the quick links below.</p>
+  </header>
+  <div class="wrap">
+    <div class="grid">
+      <div class="concept">
+        <a class="swatch-link" href="design-1-industrial.html"><div class="swatch s1"><span class="big">RR</span></div></a>
+        <div class="meta"><div class="tag">Concept 01</div><h2>Industrial / Dispatch</h2><p>Safety-yellow &amp; steel, hazard stripes, condensed type, a live "dispatch board." Looks like a real towing operation.</p><div class="langs"><a href="design-1-industrial.html">English →</a><a href="design-1-industrial.es.html">Español →</a></div></div>
+      </div>
+      <div class="concept">
+        <a class="swatch-link" href="design-3-retro.html"><div class="swatch s3"><span class="big">Est. 2004</span></div></a>
+        <div class="meta"><div class="tag">Concept 02</div><h2>Retro Garage</h2><p>Enamel badge, cream + vintage red + navy, slab serifs and starbursts. Warm, local, old-school Americana.</p><div class="langs"><a href="design-3-retro.html">English →</a><a href="design-3-retro.es.html">Español →</a></div></div>
+      </div>
+      <div class="concept">
+        <a class="swatch-link" href="design-5-map.html"><div class="swatch smap"><span class="big">Near You</span></div></a>
+        <div class="meta"><div class="tag">Concept 03</div><h2>Local Coverage</h2><p>Light &amp; clean with a live map, route line, coverage pins and an ETA badge. "We're minutes away" — built for local, near-me searches.</p><div class="langs"><a href="design-5-map.html">English →</a><a href="design-5-map.es.html">Español →</a></div></div>
+      </div>
+      <div class="concept">
+        <a class="swatch-link" href="design-6-brutalist.html"><div class="swatch sbru"><span class="big">Call <b>Now</b></span></div></a>
+        <div class="meta"><div class="tag">Concept 04</div><h2>Brutalist Mono</h2><p>Stark black on white, giant type, thick borders and a huge phone number. Bold, no-nonsense, unmissable.</p><div class="langs"><a href="design-6-brutalist.html">English →</a><a href="design-6-brutalist.es.html">Español →</a></div></div>
+      </div>
+    </div>
+  </div>
+  <footer>Demonstration concepts for a fictional business. Name, phone, and address are fabricated for preview only.</footer>
+</body>
+</html>

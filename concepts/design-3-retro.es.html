@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapid Rescue Grúas y Asistencia Vial — Concepto Retro</title>
+<style>
+  :root{
+    --cream:#f4ead3; --cream2:#efe2c4; --navy:#172a45; --navy2:#213a5e;
+    --red:#c0362c; --red-dk:#9c2a22; --mustard:#e0a52e; --ink:#241c14; --soft:#6b5d47;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--cream);color:var(--ink);font-family:"Rockwell","Roboto Slab",Georgia,serif;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+  h1,h2,h3{font-weight:800;letter-spacing:-.01em;line-height:1.02}
+  .dash{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700}
+  .ribbon{background:var(--navy);color:var(--cream);text-align:center;padding:9px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+  .ribbon b{color:var(--mustard)}
+  header{background:var(--cream);border-bottom:4px solid var(--navy);position:sticky;top:0;z-index:40}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:88px;gap:16px}
+  .badge{width:66px;height:66px;border-radius:50%;background:var(--red);border:3px solid var(--navy);display:grid;place-items:center;text-align:center;color:var(--cream);flex:none;box-shadow:0 0 0 3px var(--red)}
+  .badge .bt{font-weight:800;font-size:.9rem;line-height:.9;letter-spacing:-.02em}
+  .badge .bs{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.42rem;letter-spacing:.14em;margin-top:2px}
+  .brandline .n{font-size:1.5rem;font-weight:800;color:var(--navy);line-height:1}
+  .brandline .d{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700;margin-top:3px}
+  .nav-links{display:flex;gap:24px;align-items:center}
+  .nav-links a{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--navy)}
+  .nav-links a:hover{color:var(--red)}
+  .pill{background:var(--red);color:var(--cream)!important;padding:11px 20px;border-radius:40px;border:2px solid var(--navy)}
+  .pill:hover{background:var(--navy)}
+  .hero{background:radial-gradient(circle at 15% 20%,rgba(224,165,46,.18),transparent 40%),var(--cream);border-bottom:4px solid var(--navy);position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:60px 0 66px;align-items:center}
+  .star{display:inline-block;background:var(--mustard);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border:2px solid var(--navy);transform:rotate(-2deg);margin-bottom:20px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:var(--navy);text-shadow:3px 3px 0 rgba(192,54,44,.18)}
+  .hero h1 u{text-decoration:none;color:var(--red)}
+  .hero p{font-size:1.12rem;color:var(--soft);margin:20px 0 28px;max-width:480px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.07em;font-size:.86rem;padding:15px 26px;border-radius:44px;border:3px solid var(--navy)}
+  .btn-red{background:var(--red);color:var(--cream)}
+  .btn-red:hover{background:var(--navy)}
+  .btn-cream{background:var(--cream);color:var(--navy)}
+  .btn-cream:hover{background:var(--navy);color:var(--cream)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:5px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:10px 10px 0 var(--red);line-height:0;transform:rotate(1.2deg)}
+  .hero-photo img{width:100%;height:400px;object-fit:cover}
+  section{padding:70px 0}
+  .shead{text-align:center;margin-bottom:46px}
+  .shead h2{font-size:clamp(2rem,4.2vw,3.1rem);color:var(--navy)}
+  .shead .dash{color:var(--red);margin-bottom:10px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:var(--cream2);border:3px solid var(--navy);border-radius:12px;padding:28px;text-align:center;position:relative;box-shadow:6px 6px 0 rgba(23,42,69,.16)}
+  .card .ico{width:70px;height:70px;border-radius:50%;background:var(--navy);display:grid;place-items:center;margin:0 auto 16px;border:3px solid var(--red)}
+  .card .ico svg{width:34px;height:34px;stroke:var(--mustard);fill:none;stroke-width:2}
+  .card h3{font-size:1.5rem;color:var(--red);margin-bottom:8px}
+  .card p{color:var(--soft);font-size:.96rem}
+  .junk{background:var(--navy);color:var(--cream);border-top:4px solid var(--red);border-bottom:4px solid var(--red)}
+  .junk .inner{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;padding:48px 0}
+  .junk .seal{width:130px;height:130px;border-radius:50%;background:var(--red);border:4px dashed var(--cream);display:grid;place-items:center;text-align:center;flex:none;transform:rotate(-6deg)}
+  .junk .seal .big{font-size:1.7rem;font-weight:800;line-height:.9;color:var(--cream)}
+  .junk .seal .sm{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.5rem;letter-spacing:.12em;margin-top:4px}
+  .junk h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--mustard)}
+  .junk p{font-size:1.08rem;color:#d7ccb3;margin-top:8px;max-width:540px}
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--cream2);border:3px solid var(--navy);border-radius:12px;overflow:hidden}
+  .trust div{padding:26px;text-align:center;border-right:3px solid var(--navy)}
+  .trust div:last-child{border-right:none}
+  .trust .n{font-size:2.3rem;font-weight:800;color:var(--red)}
+  .trust .l{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);font-weight:700;margin-top:4px}
+  footer{background:var(--navy);color:var(--cream);padding:46px 0 26px;text-align:center}
+  footer .badge{margin:0 auto 16px}
+  footer .ph{font-size:2.2rem;font-weight:800;color:var(--mustard);display:inline-block;margin:6px 0}
+  footer .d{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:#a9b6c7}
+  .disc{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.68rem;color:#6d7d92;margin-top:22px;border-top:1px solid rgba(255,255,255,.12);padding-top:16px}
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:34px}.nav-links a:not(.pill){display:none}
+    .cards{grid-template-columns:1fr}.trust{grid-template-columns:1fr 1fr}
+    .trust div:nth-child(2){border-right:none}.junk .inner{grid-template-columns:1fr;text-align:center}
+    .junk .seal{margin:0 auto}
+  }
+</style>
+</head>
+<body>
+<div class="ribbon">★ Sirviendo los Suburbios del Sur Desde <b>2004</b> ★ Grúas 24 Horas · Asistencia Vial · Efectivo por Chatarra ★</div>
+<header>
+  <div class="wrap nav">
+    <a href="#" style="display:flex;align-items:center;gap:14px">
+      <span class="badge"><span><span class="bt">RR</span><span class="bs">EST. 2004</span></span></span>
+      <span class="brandline"><span class="n">Rapid Rescue</span><span class="d">Grúas · Asistencia · Chatarra</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Servicios</a><a href="#junk">Chatarra</a><a href="#contact">Contacto</a><a href="design-3-retro.html" style="color:var(--red)">EN</a>
+      <a href="tel:+17085550142" class="pill">Llama 24/7</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="star">★ Negocio Familiar ★</span>
+      <h1>Tu Equipo de<br><u>Confianza.</u></h1>
+      <p>Grúas, asistencia vial y pago honesto por carros chatarra — como se hacía antes. Contestamos el teléfono, llegamos y tratamos tu carro con respeto.</p>
+      <div class="hero-cta">
+        <a href="tel:+17085550142" class="btn btn-red">Llama (708) 555-0142</a>
+        <a href="#junk" class="btn btn-cream">Vende tu Chatarra</a>
+      </div>
+    </div>
+    <div class="hero-photo"><img src="../images/stock-tow3.jpg" alt="Grúa roja estilo clásico de Rapid Rescue cargando un auto clásico"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="shead"><div class="dash">— Lo Que Hacemos —</div><h2>Tres Servicios, Una Llamada</h2></div>
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></div>
+        <h3>Grúas</h3><p>Grúa de plataforma y recuperación para autos, camionetas y SUVs — local o larga distancia, sin rasguños.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Asistencia</h3><p>Paso de corriente, llantas, cerrajería y gasolina — un equipo real, a cualquier hora de la noche.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Chatarra</h3><p>El mejor efectivo por carros chatarra y chocados. Recogida gratis, pago el mismo día, papeleo incluido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="junk" id="junk" style="padding:0">
+  <div class="wrap inner">
+    <div class="seal"><div><div class="big">$300<br>–$3K</div><div class="sm">EN EFECTIVO</div></div></div>
+    <div>
+      <h2>Efectivo por tu Carcacha</h2>
+      <p>¿No arranca? ¿Chocado? ¿Lleva años parado? Compramos carros chatarra de cualquier marca y condición — y lo remolcamos gratis, hoy mismo.</p>
+    </div>
+    <a href="tel:+17085550142" class="btn btn-red" style="border-color:var(--cream)">Pide tu Oferta</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="trust">
+      <div><div class="n">2004</div><div class="l">Establecido</div></div>
+      <div><div class="n">24/7</div><div class="l">Siempre Abierto</div></div>
+      <div><div class="n">~30m</div><div class="l">Respuesta</div></div>
+      <div><div class="n">100%</div><div class="l">Recogida Gratis</div></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <span class="badge"><span><span class="bt">RR</span><span class="bs">EST. 2004</span></span></span>
+    <h2 style="color:var(--cream);font-size:1.8rem">Rapid Rescue Grúas y Asistencia Vial</h2>
+    <div><a href="tel:+17085550142" class="ph">(708) 555-0142</a></div>
+    <div class="d">4820 Lakeshore Avenue · Riverton, IL 60428 · Abierto 24 Horas</div>
+    <p class="disc">Concepto 03 — Retro. Diseño de demostración para un negocio ficticio; nombre, número y dirección son inventados solo para vista previa.</p>
+  </div>
+</footer>
+</body>
+</html>

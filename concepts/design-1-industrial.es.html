@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapid Rescue Grúas y Asistencia Vial — Concepto Industrial</title>
+<style>
+  :root{
+    --black:#0c0d0f; --panel:#15171b; --panel2:#1c1f25;
+    --yellow:#ffd200; --yellow-dk:#d9b200;
+    --line:#2a2e36; --text:#e8eaed; --muted:#9aa1ad; --white:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--black);color:var(--text);font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;line-height:1.5}
+  .mono{font-family:"SFMono-Regular",ui-monospace,"Roboto Mono",Menlo,Consolas,monospace}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:"Arial Narrow","Helvetica Neue",sans-serif;text-transform:uppercase;letter-spacing:.01em;font-weight:700;line-height:.98}
+  .hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 22px,#0c0d0f 22px 44px)}
+  header{background:var(--black);border-bottom:2px solid var(--yellow);position:sticky;top:0;z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo .box{background:var(--yellow);color:#0c0d0f;font-weight:800;font-size:1.5rem;padding:5px 10px;letter-spacing:-.04em;line-height:1;clip-path:polygon(0 0,100% 0,92% 100%,0 100%)}
+  .logo .t{font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:-.01em;text-transform:uppercase}
+  .logo .t small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--yellow);font-weight:700;margin-top:2px}
+  .nav-right{display:flex;align-items:center;gap:22px}
+  .nav-right .lbl{font-size:.62rem;letter-spacing:.3em;color:var(--muted);text-transform:uppercase}
+  .nav-right .ph{font-size:1.5rem;font-weight:800;color:var(--yellow);letter-spacing:-.02em}
+  .nav-menu{display:flex;gap:20px}
+  .nav-menu a{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .nav-menu a:hover{color:var(--yellow)}
+  .hero{position:relative;background:linear-gradient(rgba(12,13,15,.72),rgba(12,13,15,.92)),url('../images/stock-hero.jpg');background-size:cover;background-position:center}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;padding:62px 0 70px;align-items:center}
+  .tagstrip{display:inline-flex;gap:0;margin-bottom:22px;border:1px solid var(--line)}
+  .tagstrip span{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;color:var(--muted);border-right:1px solid var(--line);font-weight:700}
+  .tagstrip span:last-child{border-right:none;color:var(--yellow)}
+  .hero h1{font-size:clamp(3rem,7vw,6rem);color:#fff}
+  .hero h1 em{color:var(--yellow);font-style:normal}
+  .hero p{margin:20px 0 28px;color:#c8ccd3;font-size:1.1rem;max-width:460px}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem;padding:16px 26px;border:2px solid var(--yellow)}
+  .btn-y{background:var(--yellow);color:#0c0d0f}
+  .btn-y:hover{background:#0c0d0f;color:var(--yellow)}
+  .btn-o{color:#fff;border-color:#3a3f48}
+  .btn-o:hover{border-color:var(--yellow);color:var(--yellow)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .dispatch{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--yellow)}
+  .dispatch .dh{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .dispatch .dh .t{font-size:.72rem;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;font-weight:700}
+  .dispatch .dot{width:9px;height:9px;border-radius:50%;background:#2ecc71;box-shadow:0 0 0 3px rgba(46,204,113,.2)}
+  .dispatch .body{padding:18px 16px}
+  .drow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.86rem}
+  .drow .k{color:var(--muted);letter-spacing:.05em}
+  .drow .v{color:var(--yellow);font-weight:700}
+  .dispatch .big{display:block;text-align:center;padding:16px;background:var(--yellow);color:#0c0d0f;margin-top:14px}
+  .dispatch .big .n{font-size:1.9rem;font-weight:800;letter-spacing:-.02em}
+  .dispatch .big .l{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700}
+  section{padding:70px 0}
+  .shead{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--yellow);padding-bottom:14px;margin-bottom:34px;gap:20px;flex-wrap:wrap}
+  .shead h2{font-size:clamp(2rem,4vw,3rem);color:#fff}
+  .shead .idx{font-size:.72rem;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+  .svc .cell{padding:30px 26px;border-right:1px solid var(--line);position:relative}
+  .svc .cell:last-child{border-right:none}
+  .svc .num{font-family:ui-monospace,monospace;font-size:.8rem;color:var(--yellow);letter-spacing:.1em}
+  .svc h3{font-size:1.7rem;color:#fff;margin:14px 0 10px}
+  .svc p{color:var(--muted);font-size:.95rem}
+  .svc .cell::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 10px,transparent 10px 20px);opacity:0;transition:opacity .2s}
+  .svc .cell:hover::before{opacity:1}
+  .svc .cell:hover{background:var(--panel)}
+  .junk{background:var(--yellow);color:#0c0d0f}
+  .junk .inner{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:46px 0}
+  .junk h2{font-size:clamp(2.2rem,4.5vw,3.4rem)}
+  .junk p{font-weight:600;font-size:1.1rem;max-width:560px;margin-top:10px}
+  .junk .pricetag{font-family:ui-monospace,monospace;font-weight:700;margin-top:14px;font-size:1rem;letter-spacing:.02em}
+  .junk .btn{border-color:#0c0d0f;background:#0c0d0f;color:var(--yellow)}
+  .junk .btn:hover{background:transparent;color:#0c0d0f}
+  .specs{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--panel)}
+  .specs div{padding:24px;border-right:1px solid var(--line);text-align:center}
+  .specs div:last-child{border-right:none}
+  .specs .n{font-size:2.4rem;font-weight:800;color:var(--yellow)}
+  .specs .l{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+  footer{background:var(--panel);border-top:2px solid var(--yellow);padding:40px 0 26px;margin-top:0}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+  .foot .ph{font-size:2rem;font-weight:800;color:var(--yellow)}
+  .foot small{color:var(--muted);font-size:.78rem;letter-spacing:.04em}
+  .disc{color:#5a616c;font-size:.7rem;margin-top:22px;border-top:1px solid var(--line);padding-top:16px;letter-spacing:.03em}
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:30px}.nav-menu{display:none}
+    .svc{grid-template-columns:1fr}.svc .cell{border-right:none;border-bottom:1px solid var(--line)}
+    .specs{grid-template-columns:1fr 1fr}.junk .inner{grid-template-columns:1fr}
+    .nav-right .lbl{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="hazard"></div>
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="box">RR</span><span class="t">Rapid Rescue<small>Grúas · Asistencia Vial · Chatarra</small></span></a>
+    <nav class="nav-menu">
+      <a href="#services">Servicios</a><a href="#roadside">Asistencia</a><a href="#junk">Chatarra</a><a href="#contact">Contacto</a><a href="design-1-industrial.html" style="color:#fff">EN</a>
+    </nav>
+    <div class="nav-right">
+      <div style="text-align:right"><div class="lbl">Despacho 24/7</div><a href="tel:+17085550142" class="ph">(708) 555-0142</a></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tagstrip"><span>Grúas</span><span>Asistencia Vial</span><span>Carros Chatarra</span></div>
+      <h1>¿Varado?<br>Llegamos en <em>30 Min.</em></h1>
+      <p>Grúas y asistencia vial 24/7 en Riverton y los suburbios del sur — y el mejor pago por carros chatarra. Un solo número. A cualquier hora. Gente real.</p>
+      <div class="hero-cta">
+        <a href="tel:+17085550142" class="btn btn-y">► Llama a Despacho</a>
+        <a href="#junk" class="btn btn-o">Vende tu Chatarra</a>
+      </div>
+    </div>
+    <div class="dispatch">
+      <div class="dh"><span class="t">Despacho en Vivo</span><span class="dot"></span></div>
+      <div class="body">
+        <div class="drow"><span class="k">ESTADO</span><span class="v">● EN SERVICIO 24/7</span></div>
+        <div class="drow"><span class="k">RESPUESTA PROM.</span><span class="v">~30 MIN</span></div>
+        <div class="drow"><span class="k">COBERTURA</span><span class="v">SUBURBIOS SUR</span></div>
+        <div class="drow"><span class="k">OFERTAS CHATARRA</span><span class="v">$300–$3,000</span></div>
+        <a href="tel:+17085550142" class="big"><div class="n">(708) 555-0142</div><div class="l">Toca para Llamar</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="shead"><h2>Lo Que Hacemos</h2><span class="idx">SVC // 001–003</span></div>
+    <div class="svc">
+      <div class="cell"><div class="num">// 001</div><h3>Grúa y Recuperación</h3><p>Grúa de plataforma y gancho para autos, camionetas y SUVs. Recuperación de accidentes y winch — local o larga distancia.</p></div>
+      <div class="cell" id="roadside"><div class="num">// 002</div><h3>Asistencia Vial</h3><p>Paso de corriente, cambio de llantas, cerrajería y entrega de gasolina — despachados las 24 horas.</p></div>
+      <div class="cell"><div class="num">// 003</div><h3>Efectivo por Chatarra</h3><p>Compramos carros chatarra, chocados y que no arrancan. Recogida gratis, pago el mismo día, papeleo del título incluido.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="junk" id="junk" style="padding:0">
+  <div class="wrap inner">
+    <div>
+      <h2>¿Carro Chatarra? Efectivo en Mano.</h2>
+      <p>Cualquier marca, cualquier condición — no arranca, chocado, sin piezas. Lo remolcamos gratis y te pagamos al instante.</p>
+      <div class="pricetag">[ OFERTAS TÍPICAS: $300 — $3,000 · RECOGIDA GRATIS · PAGO EL MISMO DÍA ]</div>
+    </div>
+    <a href="tel:+17085550142" class="btn">Obtén tu Oferta ►</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead"><h2>En Números</h2><span class="idx">DATOS</span></div>
+    <div class="specs">
+      <div><div class="n">24/7</div><div class="l">Despacho</div></div>
+      <div><div class="n">~30m</div><div class="l">Respuesta</div></div>
+      <div><div class="n">20+</div><div class="l">Años</div></div>
+      <div><div class="n">$3K</div><div class="l">Oferta Máx.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="hazard"></div>
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot">
+      <div><a href="#" class="logo"><span class="box">RR</span><span class="t" style="font-size:1.2rem">Rapid Rescue</span></a><br><small style="margin-top:8px;display:block">4820 Lakeshore Ave · Riverton, IL 60428 · Abierto 24 Horas</small></div>
+      <div style="text-align:right"><div class="lbl" style="font-size:.62rem;letter-spacing:.3em;color:var(--muted);text-transform:uppercase">Despacho 24/7</div><a href="tel:+17085550142" class="ph">(708) 555-0142</a></div>
+    </div>
+    <p class="disc">CONCEPTO 01 — INDUSTRIAL · Diseño de demostración para Rapid Rescue, un negocio ficticio. Nombre, número y dirección son inventados solo para vista previa.</p>
+  </div>
+</footer>
+</body>
+</html>
