@@ -1,0 +1,19 @@
+# Render Blueprint — deploys this demo as a static site.
+# Docs: https://render.com/docs/blueprint-spec
+# To deploy: push to GitHub, then in Render choose New > Blueprint and pick this repo.
+services:
+  - type: web
+    name: rapid-rescue-demo
+    runtime: static
+    # No build step — these are plain HTML/CSS files served as-is.
+    buildCommand: "echo 'Static site: nothing to build'"
+    # Publish from the repo root so /concepts/*.html and /images/* both resolve.
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
